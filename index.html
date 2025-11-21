@@ -1,262 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
-
-      <style>
-            table,
-            th,
-            td {
-                  border: 1px solid black;
-                  border-collapse: collapse;
-            }
-
-            td:empty {
-                  border: none;
-            }
-      </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuteDude Taco Page</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td:empty {
+            border: none;
+        }
+    </style>
 </head>
+<body id="top">
 
-<body>
-      <h1>Welcome to <mark>TuteDude</mark> </h1>
-      <p><em>A project designed by <strong>TuteDude</strong> to learn HTML</em></p>
-      <p>Best TuteDude in town since 2021</p>
+<header>
+    <h1>Welcome to <mark>TuteDude</mark> 🌮</h1>
+    <p><em>A project designed by <strong>TuteDude</strong> to learn HTML</em></p>
+    <p>Best TuteDude in town since <time datetime="2021">2021</time></p>
 
-      <ul>
-            <li>About TD</li>
-            <li>Our Menu</li>
-            <li>Taco Trivia</li>
-            <li>Extras</li>
-            <li>Feedback Form</li>
-            <li>Contact</li>
+    <nav>
+        <ul>
+            <li><a href="#about">About TD</a></li>
+            <li><a href="#menu">Our Menu</a></li>
+            <li><a href="#trivia">Taco Trivia</a></li>
+            <li><a href="#extras">Extras</a></li>
+            <li><a href="#feedback">Feedback Form</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-      </ul>
-      <br>
+    <figure>
+        <img src="img.png" width="350" alt="TuteDude Hero Image" />
+        <figcaption>TuteDude and a Drink</figcaption>
+    </figure>
+</header>
+<hr>
 
-      <img src="img.png" alt="Img" width="350">
-      <article>TuteDude and a Drink</article>
-      <hr>
+<main>
+<section id="about">
+    <h2>About TD</h2>
 
-      <h2>About TD</h2>
-      <p>TD was founded 2021. This demo project was created by <b>TuteDude</b> for learning all major HTML tags</p>
+    <article>
+        <p><abbr title="TuteDude">TD</abbr> was founded in <time datetime="2021">2021</time>. This demo project was created by <strong>TuteDude</strong> for learning all major HTML tags.</p>
+        <blockquote>
+            "Level up your career with expert mentorship & internship for FREE" — <cite>TuteDude Team</cite>
+        </blockquote>
+    </article>
+</section>
+<hr>
 
-      <p>Level up career with expert mentorship & internship for FREE</p>
-      <hr>
-      <h2>Our Menu</h2>
+<section id="menu">
+    <h2>Our Menu</h2>
 
-      <table>
+    <table>
+        <thead>
             <tr>
-                  <th>Category</th>
-                  <th>Type</th>
-                  <th colspan="2">Small Portion </th>
-                  <th colspan="2">Large Portion </th>
+                <th>Category</th>
+                <th>Type</th>
+                <th colspan="2">Small Portion</th>
+                <th colspan="2">Large Portion</th>
             </tr>
-
             <tr>
-                  <th></th>
-                  <th></th>
-                  <th>Qty</th>
-                  <th>Price</th>
-                  <th>Qty</th>
-                  <th>Price</th>
-
+                <th></th><th></th>
+                <th>Qty</th><th>Price</th>
+                <th>Qty</th><th>Price</th>
             </tr>
-            <!--TuteDude-->>
-            <tr>
-                  <td rowspan="3"><b>TuteDude</b></td>
-                  <td>Crunchy(Beef)</td>
-                  <td>1</td>
-                  <td>$1.50</td>
-                  <td>3</td>
-                  <td>$3.25</td>
+        </thead>
 
+        <tbody>
+            <tr>
+                <td rowspan="3"><strong>TuteDude</strong></td>
+                <td>Crunchy (Beef)</td><td>1</td><td>$1.50</td><td>3</td><td>$3.25</td>
             </tr>
-
             <tr>
-                  <td>Crunchy(Chicken)</td>
-                  <td>1</td>
-                  <td>$1.75</td>
-                  <td>3</td>
-                  <td>$3.50</td>
+                <td>Crunchy (Chicken)</td><td>1</td><td>$1.75</td><td>3</td><td>$3.50</td>
             </tr>
-
             <tr>
-                  <td>Crunchy(Veggie)
-                        <table>
-                              <tr>
-                                    <td>
-                                    <th>Nutrient</th>
-                                    <th>Value</th>
-                                    </td>
-                              </tr>
-                        </table>
-                  </td>
-                  <td>1</td>
-                  <td>$1.25</td>
-                  <td>3</td>
-                  <td>$3</td>
+                <td>
+                    Crunchy (Veggie)
+                    <table>
+                        <tr><th>Nutrient</th><th>Value</th></tr>
+                        <tr><td>Calories</td><td>150 kcal</td></tr>
+                        <tr><td>Protein</td><td>5 g</td></tr>
+                        <tr><td>Fiber</td><td>4 g</td></tr>
+                    </table>
+                </td>
+                <td>1</td><td>$1.25</td><td>3</td><td>$3.00</td>
             </tr>
 
             <tr>
-                  <td rowspan="2">Soft TuteDude</td>
-                  <td>Soft(Beef)</td>
-                  <td>2</td>
-                  <td>$3.50</td>
-                  <td>4</td>
-                  <td>$6.50</td>
+                <td rowspan="2">Soft TuteDude</td>
+                <td>Soft (Beef)</td><td>2</td><td>$3.50</td><td>4</td><td>$6.50</td>
             </tr>
             <tr>
+                <td>Soft (Veggie)</td><td>2</td><td>$3.00</td><td>4</td><td>$5.50</td>
+            </tr>
 
-                  <td>Soft(Veggie)</td>
-                  <td>2</td>
-                  <td>$3.50</td>
-                  <td>4</td>
-                  <td>$5.50</td>
+            <tr>
+                <td rowspan="2">Combos</td>
+                <td>2 Crunchy + Drink</td><td>$4.50</td><td></td><td></td><td></td>
             </tr>
             <tr>
-                  <td rowspan="2">Combos</td>
-                  <td>2 Crunchy + Drink</td>
-                  <td>$4.50</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                <td>
+                    2 Soft + Drink
+                    <table>
+                        <tr><th>Item</th><th>Calories</th><th>Sugar</th></tr>
+                        <tr><td>Soft Taco</td><td>200 kcal</td><td>2 g</td></tr>
+                        <tr><td>Drink</td><td>120 kcal</td><td>25 g</td></tr>
+                    </table>
+                </td>
+                <td>$5.00</td><td></td><td>N/A</td><td></td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Extras</td>
+                <td>Chips & Salsa</td><td>$2.00</td><td></td><td></td><td></td>
             </tr>
             <tr>
-                  <td>2 Soft + Drink
-
-                  <table>
-                        <tr>
-                              <th>Item</th>
-                              <th>Calories</th>
-                              <th>Sugar</th>
-                        </tr>
-                        <tr>
-                              <td>Soft Taco</td>
-                              <td>200 Kcal</td>
-                              <td>2g</td>
-                        </tr>
-                        <tr>
-                              <td>Drink</td>
-                              <td>120 kcal</td>
-                              <td>25g</td>
-                        </tr>
-                  </table>
-                  </td>
-
-                  <td>$4.50</td>
-                  <td></td>
-                  <td>NA</td>
-                  <td></td>
-
-
+                <td>Guacamole</td><td>$1.50</td><td></td><td></td><td></td>
             </tr>
+        </tbody>
 
-      <!-- Extra -->
-            <tr>
-                  <td rowspan="2">Extra</td>
+        <tfoot>
+            <tr><td colspan="6">Average Meal Price Range: $2.00 – $6.50</td></tr>
+        </tfoot>
+    </table>
 
-                  <td>Chips & Salsa</td>
-                  <td>$2.00</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+    <p><a href="#top">Back to Top</a></p>
+</section>
+<hr>
 
+<section id="trivia">
+    <h2>Taco Trivia</h2>
 
+    <aside>
+        <details>
+            <summary>When did TuteDude first appear in the United States?</summary>
+            <p>TuteDude became famous in the US around <time>2021</time>.</p>
+        </details>
+    </aside>
+</section>
+<hr>
 
+<section id="extras">
+    <h2>Media Fun</h2>
+    <h3>Listen to Taco Music</h3>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mp3" />
+    </audio>
 
-            </tr>
-            <tr>
-                  <td>Guacamole</td>
-                  <td>$1.50</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-            </tr>
+    <h3>Watch Taco Video</h3>
+    <video controls width="350">
+        <source src="video.mp4" type="video/mp4" />
+    </video>
+</section>
+<hr>
 
-            <tr> 
-                  <td>
-                  Average Meal Price Range : & 2.00 -$ 6.50
-                  </td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  
-            </tr>
+<section id="feedback">
+    <h1>Give Us Your Feedback</h1>
 
+    <form>
+        <fieldset>
+            <legend>Your Info</legend>
 
+            <label>Name:</label><br>
+            <input type="text" name="name"><br><br>
 
-      </table>
+            <label>Email:</label><br>
+            <input type="email" name="email"><br><br>
 
-      
-      <a href="#top">Go Back To Top</a>
-      <hr>
-      <h2>Taco Trivia</h2>
-      <ul>
-            <li>When did TuteDude first appear in United State ?</li>
-      </ul>
+            <label>Favorite Taco:</label>
+            <select>
+                <option>Crunchy</option>
+                <option>Soft</option>
+                <option>Veggie</option>
+            </select>
+        </fieldset>
 
-      <h2>Media Fun</h2>
+        <br>
 
-      <b>Listen to Taco Music</b>
-           
-      <hr>
+        <fieldset>
+            <legend>Your Message</legend>
+            <label>Message:</label><br>
+            <textarea rows="5" cols="40"></textarea>
+        </fieldset>
 
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</section>
+<hr>
+</main>
 
-<h1>Give Us Your Feedback</h1>
+<footer id="contact">
+    <h2>Contact Us</h2>
+    <address>
+        <strong>TuteDude</strong><br>
+        123 Taco Street<br>
+        Taco Town, TX 75000<br>
+        <a href="mailto:info@tutedude.com">info@tutedude.com</a>
+    </address>
 
-<form>
-
-    <fieldset>
-        <legend>Your Info</legend>
-
-        <label>Name:</label><br>
-        <input type="text" name="name"><br><br>
-
-        <label>Email:</label><br>
-        <input type="email" name="email"><br><br>
-
-        <label>Favorite Taco:</label>
-        <select>
-            <option>Crunchy</option>
-            <option>Soft</option>
-            <option>Veggie</option>
-        </select>
-    </fieldset>
-
-    <br>
-
-    <fieldset>
-        <legend>Your Message</legend>
-
-        <label>Message:</label><br>
-        <textarea rows="5" cols="40"></textarea>
-    </fieldset>
-
-    <br>
-
-    <input type="submit" value="Submit">
-
-</form>
-
-<br><br>
-
-<h2>Contact Us</h2>
-
-<p>
-    <strong>TuteDude</strong><br>
-    123 Taco Street<br>
-    Taco Town, TX 75000<br>
-    <a href="mailto:info@tutedude.com">info@tutedude.com</a>
-</p>
-
-<p>© 2025 TuteDude. All rights reserved.</p>
-
+    <p>© <time datetime="2025">2025</time> TuteDude. All rights reserved.</p>
+</footer>
 
 </body>
-
 </html>
